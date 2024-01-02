@@ -1,0 +1,74 @@
+/*
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+}
+
+*/
+
+/*  S T A R T                  H E A D E R                         S E C T I O N  */
+/*   E N D                     H E A D E R                         S E C T I O N  */
+
+/*  S T A R T                  H O M E                             S E C T I O N  */
+@media screen and (max-width: 768px) {
+  .home .content h1 {
+    font-size: 3.5rem;
+  }
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .home .content h1 {
+    text-wrap: wrap;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+  }
+}
+/*   E N D                     H O M E                             S E C T I O N  */
+
+/*  S T A R T                  A B O U T                           S E C T I O N  */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .about-me-info {
+    font-size: 18px;
+  }
+}
+/*   E N D                     A B O U T                           S E C T I O N  */
+
+/*  S T A R T                  S E R V I C E S                     S E C T I O N  */
+/*   E N D                     S E R V I C E S                     S E C T I O N  */
+
+/*  S T A R T                  C O U N T E R                       S E C T I O N  */
+/*   E N D                     C O U N T E R                       S E C T I O N  */
+
+/*  S T A R T                  P O R T F O L I O                   S E C T I O N  */
+/*   E N D                     P O R T F O L I O                   S E C T I O N  */
+
+/*  S T A R T                  T E S T I M O N I A L S             S E C T I O N  */
+/*   E N D                     T E S T I M O N I A L S             S E C T I O N  */
+
+/*  S T A R T                  B L O G                             S E C T I O N  */
+/*   E N D                     B L O G                             S E C T I O N  */
+
+/*  S T A R T                  C O N T A C T                       S E C T I O N  */
+/*   E N D                     C O N T A C T                       S E C T I O N  */
+
+/*  S T A R T                  F O O T E R                         S E C T I O N  */
+/*   E N D                     F O O T E R                         S E C T I O N  */

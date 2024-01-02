@@ -1,0 +1,196 @@
+/*  V A R I A B L E S  */
+:root {
+  --highlight: #fec260;
+  --highlight-dark: #d0d066;
+  --gradient: linear-gradient(to left, #d0d066, #fec260);
+  --gradient-dark: linear-gradient(to right, #d0d066, #fec260);
+
+  --color-base: #212529;
+  --color-base-dark: #eee;
+  --color-primary: #352e28;
+  --color-primary-dark: #eee;
+  --color-secondary: #bb4120;
+  --color-secondary-dark: #d0d066;
+
+  --ff-base: "PT Sans Caption", sans-serif;
+  --ff-primary: "Pacifico", "cursive";
+  --ff-secondary: "Righteous", sans-serif;
+  --ff-tertiary: "Bree Serif", serif;
+
+  --fs-base: 1rem;
+  --fs-primary: 3.125rem;
+  --fs-secondary: 3.125rem;
+}
+
+/*  S H A R E D   S T Y L E  */
+body {
+  width: 80%;
+  margin-inline: auto;
+}
+
+::selection {
+  /* background: var(--highlight); */
+  background: rgba(254, 194, 96, 0.5);
+}
+
+body.dark ::selection {
+  background: rgba(208, 208, 102, 0.5);
+}
+
+body.dark ::-webkit-input-placeholder {
+  color: rgba(208, 208, 102, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: var(--bs-btn-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* ===================== G E N E R A L----S T Y L E S ===================== */
+
+/*  S T A R T                  H E A D E R                             S E C T I O N  */
+#header h1 {
+  color: var(--color-primary);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+  font-weight: 500;
+  line-height: 3.75rem;
+  position: relative;
+  cursor: default;
+}
+
+body.dark #header h1 {
+  background-image: linear-gradient(to right, #767d81, #708f26);
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  outline: none;
+}
+
+#header h1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  padding: 0.5rem;
+  left: 0;
+  right: 0;
+  top: 70%;
+  bottom: 0;
+  background-color: var(--highlight);
+  transition: top 0.5s ease-in-out;
+}
+
+body.dark main #header h1::before {
+  background-color: var(--highlight-dark);
+}
+
+#header h1:hover::before {
+  top: 25%;
+}
+/*   E N D                     H E A D E R                             S E C T I O N  */
+
+/*  S T A R T                     L O G I N                      S E C T I O N  */
+#login {
+  border: 0.125rem solid var(--highlight);
+  padding: 3rem;
+  margin-block: 3.125rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+body.dark main #login {
+  border: 0.125rem solid #708f26;
+}
+
+#login .login-box h1 {
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  outline: none;
+}
+
+body.dark #login .login-box h1 {
+  background-image: var(--gradient-dark);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  outline: none;
+}
+
+#login input {
+  margin-bottom: 1.5625rem;
+  border: none;
+  outline: 1px solid #fec260;
+}
+
+body.dark #login input {
+  margin-bottom: 1.5625rem;
+  border: none;
+  outline: 1px solid #d0d066;
+}
+
+body.dark #login input.form-control {
+  color: whitesmoke;
+}
+
+
+#login input:focus {
+  color: rgb(33, 37, 41);
+  background-color: rgb(255, 255, 255);
+  box-shadow: #fec260 0px 0px 0px 0.25rem;
+  border-color: #fec260;
+  outline: none;
+}
+body.dark #login input:focus {
+  color: rgb(33, 37, 41);
+  background-color: rgb(255, 255, 255);
+  box-shadow: #d0d066 0px 0px 0px 0.25rem;
+  border-color: #d0d066;
+  outline: none;
+}
+
+body.dark #login input.form-control:focus {
+  color: whitesmoke;
+}
+
+#login .btn-sub {
+  color: var(--color-base-dark);
+  font-family: var(--ff-base);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: var(--highlight);
+  width: 9.375rem;
+  padding-block: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: transform 0.5s, background 0.5s;
+}
+body.dark #login .btn-sub {
+  color: #eee;
+  background-color: var(--highlight-dark);
+}
+#login .btn-sub:hover {
+  background-color: #fecc60;
+}
+
+body.dark #login .btn-sub:hover {
+  background-color: #c9d066b2;
+}
+
+#login .btn-sub:active {
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 3px 1px 2px;
+}
+#login a {
+  color: #fecc60;
+}
+
+body.dark #login a {
+  color: #c9d066b2;
+}
+/*  E N D                        L O G I N                      S E C T I O N  */

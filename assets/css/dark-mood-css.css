@@ -1,0 +1,58 @@
+body {
+  --accent-clr: #fec260;
+  /* --bg-clr: #eee; */
+  /* --bg-clr: #FFF1D7; */
+  --bg-clr: #fff8dc;
+  --txt-clr: black;
+  --btn-txt-clr: var(--bg-clr);
+  --transition-delay: 1s;
+
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
+}
+
+body.dark {
+  --accent-clr: #d0d066;
+  --bg-clr: #333;
+  --txt-clr: white;
+}
+
+.title {
+  margin: 0;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  fill: var(--bg-clr);
+  transition: var(--transition-delay);
+}
+
+.theme-toggel-btn {
+  width: 60px;
+  height: 60px;
+  background-color: var(--accent-clr);
+  color: var(--btn-txt-clr);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+
+  transition: var(--transition-delay);
+  transform: scale(1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-toggel-btn:hover,
+.theme-toggel-btn:focus {
+  transform: scale(1.1);
+}
